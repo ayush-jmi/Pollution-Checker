@@ -15,10 +15,18 @@ The circuit diagram is shown in the fig. It is build around NodeMCU (ESP8266), M
 Battery of 5V, 8000mAh is connected to power the device.
  
 SOFTWARE
+
 The code is written in Arduino programming language using Arduino IDE, which allows writing the code within few lines. 
+
 To add board for ESP8266 in Arduino IDE, go to ->File ->Preferences and paste the below link in Additional Board Manager URLs.
+
 https://arduino.esp8266.com/stabl/package_esp8266com_index.json
+
 Open Boards Manager from Tools ->Board menu and install esp8266 platform. (Do not forget to select your NodeMCU board from Tools ->Board menu after installation).
+
 You can download the code from the link below.
+
 https://github.com/ayush-jmi/Pollution-Checker/blob/master/Pollution_Checker.ino
+
+
 **It will start updating data online 15 minutes after power is on so that MQ135 can take accurate readings.**
