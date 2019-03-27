@@ -1,6 +1,9 @@
 # Pollution-Checker
+
 In this project, we are showing the amount of PPM10 (present in air using MQ135) and upload it online after checking whether wifi connection is available or not as well as,  internet connection is available or not. It refresh its reading after every one second on 16*2 Liquid Crystal Display (LCD) and upload a new value online after every one minute thirty seconds online. In starting, it waits fifteen minutes so that MQ135 gets time to heat up and starts showing correct value. It consists of internally installed battery to power it.
+
 COMPONENTS
+
 The components used to make it are:-
 1)	NodeMCU (ESP8266): NodeMCU is an open source Internet of Things platform with embedded controller that is programmed through Arduino IDE, to handle analog and digital received from sensors and to print data on OLED display. I use ESP8266 in place of Arduino UNO because dynamic memory of Arduino UNO is 2048 bytes and only one image can be uploaded in the code while ESP8266 has 81920 of dynamic memory and we can upload around 50 images in it.
 2)	Pollution Sensor (MQ135): Sensitive material of MQ135 gas sensor is SnO2, which with lower conductivity in clean air. When the target combustible gas exist, the sensor’s conductivity is more higher along with the gas concentration rising. Please use simple electro circuit, Convert change of conductivity to correspond output signal of gas concentration. MQ135 gas sensor has high sensitivity to Ammonia, Sulfide and Benze steam, also sensitive to smoke and other harmful gases. It is with low cost and suitable for different application. It can detect particles of range 10 to 1000 PPM.
